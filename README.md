@@ -84,7 +84,7 @@ This project is developed as coursework for academic purposes.
 
 Below is one demo screenshot for reference:
 
-![Demo Screenshot](Media/startPage.jpg)
+![Demo Screenshot](Media/StartPage.jpg)
 
 Other screenshots are available in the **media** folder.
 
