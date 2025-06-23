@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">SSLP</string>
+
+    <!--    Register Page-->
+    <string name="editTextRegisterPageConfirmPassword">Confirm Password</string>
+    <string name="editTextRegisterPagePassword">Enter Your Password</string>
+    <string name="editTextRegisterPageEmail">Enter Your Email</string>
+    <string name="editTextRegisterPageFullName">Enter Your Full Name</string>
+    <string name="editTextRegisterPageDOB">Select Your DOB</string>
+    <string name="editTextRegisterPageBioID">Enter Your BioID</string>
+    <string name="buttonRegisterPageScanQR">Scan QR Code</string>
+    <string name="buttonRegisterPageRegister">Register</string>
+
+    <!--    Error of Register Page-->
+
+    <string name="errorRegisterPageEmptyEmail">Please Enter The Email</string>
+    <string name="errorRegisterPageInvalidEmail">Please Enter The Valid Email</string>
+    <string name="errorRegisterPageEmptyFullName">Please Enter The Full Name</string>
+    <string name="errorRegisterPageInvalidFullName">Please Enter The Valid Full Name \nYour Name Should Begin With an Alphabet And No Special Characters Are Allowed</string>
+    <string name="errorRegisterPageEmptyDate">Please Enter The Date Of Birth</string>
+    <string name="errorRegisterPageInvalidDate">Your Age Should Be 18+</string>
+    <string name="errorRegisterPageEmptyPassword">Please Enter Password</string>
+    <string name="errorRegisterPageInvalidPassword">Password Length Too Short. \nRefer - Abcd@138 </string>
+    <string name="errorRegisterPageInvalidPassword3">Password must contain at least one digit. \nRefer - Abcd@138 </string>
+    <string name="errorRegisterPageInvalidPassword2">Password must contain at least one special character. \nRefer - Abcd@138</string>
+    <string name="errorRegisterPageEmptyConfirmPassword">Please Enter Confirm Password</string>
+    <string name="errorRegisterPageInvalidConfirmPassword">Confirm password doesn\'t match with password</string>
+    <string name="errorRegisterPageEmptyDOB">Please Enter The DOB</string>
+    <string name="errorRegisterPageEmptyBioID">Please Enter The BioID</string>
+    <string name="errorRegisterPageInvalidBioID">Please Enter The Valid BioID</string>
+    <string name="errorRegisterPageExistingBioID">BioID already exists</string>
+    <string name="errorRegisterPageExistingEmails">Emails already exists</string>
+
+    <!--    Error while encryption-->
+    <string name="buttonLoginPageLogin">Login</string>
+
+    <!--    Login Page-->
+    <string name="errorEncryption">Securing the Password Failed</string>
+    <string name="textViewForgotPassword">Forgot Password ?</string>
+
+
+    <!--    Forgot Password Email-->
+    <string name="textView1ForgotPasswordEmail">Forgot Password</string>
+    <string name="textView2ForgotPasswordEmail">Please enter your email to reset the password</string>
+    <string name="buttonSendVerificationCode">Send Reset Link</string>
+    <string name="textView3ForgotPasswordEmail">Haven\'t received email yet?</string>
+    <string name="textView4ForgotPasswordEmail">Resend Email</string>
+
+    <!--    Forgot Password Reset Password-->
+    <string name="textView1ForgotPasswordResetPassword">Set a New Password</string>
+    <string name="textView2ForgotPasswordResetPassword">Enter a new password.Ensure it differs from previous one.</string>
+    <string name="buttonForgotPasswordResetPassword">Reset Password</string>
+    <string name="textView3ForgotPasswordResetPassword">Haven\'t received email yet?</string>
+    <string name="textView4ForgotPasswordResetPassword">Resend Email</string>
+
+
+    <!-- Main Activity    -->
+    <string name="profileSelection">Please Select Your Profile</string>
+    <string name="admin">Admin</string>
+    <string name="petitioner">Petitioner</string>
+
+
+    <string name="petitionClosed">Petition is Closed.\nYou Cannot Sign The Petition</string>
+
+
+    <!-- Petitioner Entry    -->
+    <string name="textViewPetitionerEntryPage">Shangri-La Petition Platform</string>
+    <string name="textView2PetitionerEntryPage">This platform allows citizens of Shangri-La to create or sign petitions
+on matter within the government’s responsibility</string>
+</resources>

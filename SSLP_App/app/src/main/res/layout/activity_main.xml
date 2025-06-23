@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/app_name"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:titleTextColor="?attr/colorOnPrimary"
+        app:titleMarginStart="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profileSelection"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMainToAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/linear_layout_bg_activity_main"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/admin_icon"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:focusable="false"/>
+
+        <Button
+            android:id="@+id/buttonMainToAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="@string/admin"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:focusable="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMainToPetitioner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/linear_layout_bg_activity_main"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_profile_icon"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:focusable="false"/>
+
+        <Button
+            android:id="@+id/buttonMainToPetitioner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="@string/petitioner"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:focusable="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

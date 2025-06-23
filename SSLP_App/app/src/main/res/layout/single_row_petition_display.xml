@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutSingleRowPetitions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Title of the Petition -->
+        <TextView
+            android:id="@+id/textViewSingleRowPetitionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/textViewSingleRowPetitionStatus"
+            android:layout_marginEnd="16dp"
+            android:text="Title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Status of the Petition -->
+        <TextView
+            android:id="@+id/textViewSingleRowPetitionStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:text="Status"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <!-- Number of Signatures -->
+        <TextView
+            android:id="@+id/textViewSingleRowPetitionSignatures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewSingleRowPetitionTitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:text="Signatures: 0"
+            android:textSize="14sp"
+            android:textColor="@color/Grey500" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

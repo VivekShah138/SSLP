@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SinglePetitionDetails"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/topAppBarSinglePetitionPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:elevation="4dp"
+                app:navigationIcon="@drawable/login_page_arrow_left_back_button"
+                app:title="Petition"
+                app:titleTextColor="?attr/colorOnPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Petition Title :"
+                    android:textColor="@color/Grey500"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:id="@+id/textViewSinglePetitionDetailsPetitionTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="PetitionTitle"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="start"
+                        android:layout_margin="10dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Petition Details"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="start"
+                    android:textColor="@color/Grey500"
+                    android:layout_marginStart="10dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:id="@+id/textViewSinglePetitionDetailsPetitionDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="PetitionTitle"
+                        android:textSize="16dp"
+                        android:textStyle="italic"
+                        android:layout_gravity="start"
+                        android:layout_margin="10dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+                <Button
+                    android:id="@+id/buttonSinglePetitionDetailsSignPetition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Petition"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:background="@drawable/add_item_edit_text_bg"/>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+
+
+                <TextView
+                    android:id="@+id/textViewSinglePetitionDetailsSignatureNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Signatures"
+                    android:layout_margin="10dp"
+                    android:gravity="start"
+                    android:layout_gravity="start"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBarSinglePetitionDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:progressDrawable="@drawable/custom_progressbar"
+                    android:visibility="visible"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:id="@+id/textViewSinglePetitionDetailsThresholdValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="threshold value"
+                    android:layout_gravity="end"
+                    android:gravity="end"/>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Petition Status :"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="start"
+                    android:textColor="@color/Grey500"
+                    android:layout_marginStart="10dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:id="@+id/textViewSinglePetitionDetailsPetitionStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Status"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:inputType="textCapSentences"
+                        android:layout_margin="10dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Petition Response :"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="start"
+                    android:textColor="@color/Grey500"
+                    android:layout_marginStart="10dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:id="@+id/textViewSinglePetitionDetailsPetitionResponse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Response"
+                        android:inputType="textMultiLine"
+                        android:textSize="16dp"
+                        android:layout_margin="10dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+                <Button
+                    android:id="@+id/buttonSinglePetitionDetailsClosePetition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Response"
+                    android:layout_margin="10dp"
+                    android:visibility="invisible"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:background="@drawable/add_item_edit_text_bg"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

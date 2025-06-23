@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/topAppBarRegisterPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="@string/app_name"
+                android:background="?attr/colorPrimary"
+                android:elevation="4dp"
+                app:titleTextColor="?attr/colorOnPrimary"
+                app:navigationIcon="@drawable/login_page_arrow_left_back_button" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <EditText
+                    android:id="@+id/editText_Register_Email_Id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/editTextRegisterPageEmail"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:background="@drawable/add_item_edit_text_bg"
+                    android:textSize="18dp"
+                    android:drawableLeft="@drawable/email_icon"
+                    android:textColor="?attr/colorOnBackground"/>
+
+                <EditText
+                    android:id="@+id/editText_Register_Full_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/editTextRegisterPageFullName"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:background="@drawable/add_item_edit_text_bg"
+                    android:textSize="18dp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/username_icon"
+                    android:textColor="?attr/colorOnBackground"/>
+
+                <TextView
+                    android:id="@+id/editText_Register_DOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/editTextRegisterPageDOB"
+                    android:inputType="date"
+                    android:padding="10dp"
+                    android:background="@drawable/add_item_edit_text_bg"
+                    android:textSize="18dp"
+                    android:drawableLeft="@drawable/dob_icon"
+                    android:drawablePadding="10dp"
+                    android:textColor="?attr/colorOnBackground"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    android:layout_marginTop="20dp"
+                    app:startIconDrawable="@drawable/password_icon"
+                    app:hintEnabled="false"
+                    app:boxBackgroundMode="none"
+                    app:startIconTint="@color/Grey500"
+                    android:textColor="?attr/colorOnBackground">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextRegisterPagePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/add_item_edit_text_bg"
+                        android:hint="@string/editTextRegisterPagePassword"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:paddingStart="40dp"
+                        android:textColor="?attr/colorOnBackground"
+                        android:textSize="18dp"
+                        android:textStyle="normal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    android:layout_marginTop="20dp"
+                    app:startIconDrawable="@drawable/password_icon"
+                    app:hintEnabled="false"
+                    app:boxBackgroundMode="none"
+                    app:startIconTint="@color/Grey500">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextRegisterPageConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/editTextRegisterPageConfirmPassword"
+                        android:paddingStart="40dp"
+                        android:padding="10dp"
+                        android:background="@drawable/add_item_edit_text_bg"
+                        android:textSize="18dp"
+                        android:textColor="?attr/colorOnBackground"
+                        android:textStyle="normal"
+                        android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <EditText
+                    android:id="@+id/editText_Register_BioID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/editTextRegisterPageBioID"
+                    android:inputType="textPostalAddress"
+                    android:padding="10dp"
+                    android:background="@drawable/add_item_edit_text_bg"
+                    android:textSize="18dp"
+                    android:drawableLeft="@drawable/bio_id_icon"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/scan_icon"
+                    android:textColor="?attr/colorOnBackground"/>
+
+
+                <Button
+                    android:id="@+id/buttonRegisterPageRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/add_item_edit_text_bg"
+                    android:textSize="18dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/buttonRegisterPageRegister"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<vector
+    android:height="20dp"
+    android:viewportHeight="512"
+    android:viewportWidth="512"
+    android:width="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <path
+        android:fillColor="@color/Grey500"
+        android:pathData="M490.6,43H381.1V11h-20.9v32H151.7V11h-20.9v32H21.4C15.2,43 11,47.2 11,53.6v436.7c0,6.4 4.2,10.7 10.4,10.7h469.1c6.3,0 10.4,-4.3 10.4,-10.7V53.6C501,47.2 496.8,43 490.6,43zM480.1,479.7H31.9V64.3h99v32h20.9v-32h208.5v32h20.9v-32h99V479.7z" />
+    <path
+        android:fillColor="@color/Grey500"
+        android:pathData="m84,170.8c-6.3,0 -10.4,4.3 -10.4,10.7v245c0,6.4 4.2,10.7 10.4,10.7h344c6.3,0 10.4,-4.3 10.4,-10.7v-245c0,-6.4 -4.2,-10.7 -10.4,-10.7h-344zM417.6,415.8h-323.2v-223.7h323.2v223.7z" />
+    <path
+        android:fillColor="@color/Grey500"
+        android:pathData="M214.3,232.6h20.9v21.3h-20.9z" />
+    <path
+        android:fillColor="@color/Grey500"
+        android:pathData="M276.9,232.6h20.9v21.3h-20.9z" />
+    <path
+        android:fillColor="@color/Grey500"
+        android:pathData="M339.4,232.6h20.9v21.3h-20.9z" />
+    <path
+        android:fillColor="@color/Grey500"
+        android:pathData="M151.7,293.3h20.9v21.3h-20.9z" />
+    <path
+        android:fillColor="@color/Grey500"
+        android:pathData="M214.3,293.3h20.9v21.3h-20.9z" />
+    <path
+        android:fillColor="@color/Grey500"
+        android:pathData="M276.9,293.3h20.9v21.3h-20.9z" />
+    <path
+        android:fillColor="@color/Grey500"
+        android:pathData="M339.4,293.3h20.9v21.3h-20.9z" />
+    <path
+        android:fillColor="@color/Grey500"
+        android:pathData="M151.7,355.1h20.9v21.3h-20.9z" />
+    <path
+        android:fillColor="@color/Grey500"
+        android:pathData="M214.3,355.1h20.9v21.3h-20.9z" />
+    <path
+        android:fillColor="@color/Grey500"
+        android:pathData="M276.9,355.1h20.9v21.3h-20.9z" />
+    <path
+        android:fillColor="@color/Grey500"
+        android:pathData="M339.4,355.1h20.9v21.3h-20.9z" />
+</vector>
+

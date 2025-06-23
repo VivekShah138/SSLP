@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RoundedSquareFabShape" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item> <!-- Adjust the corner radius -->
+    </style>
+
+    <style name="CustomFloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="rippleColor">?attr/colorOnPrimary</item>
+        <item name="shapeAppearanceOverlay">@style/RoundedSquareFabShape</item> <!-- Apply the custom shape -->
+        <item name="tint">?attr/colorOnPrimary</item> <!-- Tint color for the icon -->
+        <item name="backgroundTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="CustomSignPetitionButton" parent="Widget.AppCompat.Button">
+        <item name="backgroundTint">@color/GreenA700</item>
+    </style>
+
+
+
+
+
+</resources>

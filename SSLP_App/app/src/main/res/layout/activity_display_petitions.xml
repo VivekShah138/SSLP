@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayPetitions"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayoutDisplayPetitionsPetitionDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/topAppBarDisplayPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorPrimary"
+                    android:elevation="4dp"
+                    app:title="Hey, UserName"
+                    app:titleTextColor="?attr/colorOnPrimary"
+                    app:menu="@menu/logout"
+                    app:titleMarginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/textViewDisplayPetitionsNumberOfPetitions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Number of Petitions"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_margin="20dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerviewDisplayPetitionsPetitionDisplay"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/buttonDisplayPetitionsAddPetitions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/add_petition_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="60dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="end|bottom"
+            android:visibility="invisible"
+            style="@style/CustomFloatingActionButton"/>
+
+        <!-- Set Threshold Button -->
+        <Button
+            android:id="@+id/buttonDisplayPetitionsSetThreshold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Threshold"
+            android:visibility="invisible"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_vertical|bottom"
+            android:padding="10dp"/>
+    </FrameLayout>
+</LinearLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    tools:context=".DisplayPetitions"-->
+    <!--    android:orientation="vertical">-->
+
+
+    <!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+    <!--        android:id="@+id/swipeRefreshLayoutDisplayPetitionsPetitionDisplay"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/textViewDisplayPetitionsNumberOfPetitions"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:gravity="center"-->
+    <!--                android:hint="Number of Petitions"-->
+    <!--                android:textStyle="bold"-->
+    <!--                android:textSize="18dp"-->
+    <!--                android:layout_margin="20dp"/>-->
+
+
+    <!--                <androidx.recyclerview.widget.RecyclerView-->
+    <!--                    android:id="@+id/recyclerviewDisplayPetitionsPetitionDisplay"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="vertical"-->
+    <!--                    android:padding="10dp"-->
+    <!--                    android:layout_weight="1">-->
+
+
+    <!--                </androidx.recyclerview.widget.RecyclerView>-->
+
+
+
+
+
+
+
+
+    <!--        </LinearLayout>-->
+    <!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+
+
+    <!--</LinearLayout>-->

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/startup_page_image" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:text="@string/textViewPetitionerEntryPage"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnBackground"
+                android:gravity="center"
+                android:layout_marginTop="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:text="@string/textView2PetitionerEntryPage"
+                android:textSize="14dp"
+                android:textColor="?attr/colorOnBackground"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/linear_layout_buttons_start_page_bg"
+                android:padding="3dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="40dp">
+
+                <Button
+                    android:id="@+id/buttonStartUpPageLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_button_start_page_bg"
+                    android:shadowColor="?attr/colorOnBackground"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"/>
+
+                <Button
+                    android:id="@+id/buttonStartUpPageRegister"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_button_start_page_bg"
+                    android:shadowColor="?attr/colorOnBackground"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
